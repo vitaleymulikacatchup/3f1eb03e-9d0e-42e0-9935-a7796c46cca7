@@ -6,6 +6,7 @@ import TextAbout from '@/components/sections/about/TextAbout';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
 
 const assetMap = [
   { id: 'heroImage', url: 'https://images.pexels.com/photos/6188305/pexels-photo-6188305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'A young couple having milkshakes and pizza at a cozy cafe. Relaxed and joyful atmosphere.' },
@@ -15,11 +16,11 @@ const assetMap = [
 export default function Home() {
   return (
     <ThemeProvider
-      defaultButtonVariant={'text-stagger'}
-      defaultTextAnimation={'entrance-slide'}
-      borderRadius={'rounded'}
+      defaultButtonVariant="text-stagger"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="rounded"
     >
-      <div id="nav" data-section="nav">
+      <div id="nav" data-section="nav" className="scroll-mt-24">
         <NavbarStyleMinimal brandName="My Pizzeria" />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
